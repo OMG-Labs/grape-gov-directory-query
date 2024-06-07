@@ -5,7 +5,7 @@ import {publicKey, unwrapOption} from "@metaplex-foundation/umi";
 const CONFIG = publicKey("GrVTaSRsanVMK7dP4YZnxTV6oWLcsFDV1w6MHGvWnWCS");
 
 (async () => {
-    const umi = createUmi("your rpc")
+    const umi = createUmi("your RPC")
     const entries = await getRealms(umi, CONFIG, RequestStatus.Approved);
     console.log("Entries", entries);
     console.log(entries.length)
